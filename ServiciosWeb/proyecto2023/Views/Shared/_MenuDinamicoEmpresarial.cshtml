@@ -1,0 +1,120 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using System.Text.Json;
+@using System.Security.Claims;
+@using System.Diagnostics;
+@inject IHttpContextAccessor HttpContextAccessor;
+
+@{
+
+    string listaJson = HttpContextAccessor.HttpContext.Session.GetString("menuEmpre");
+
+    List<TbMenuEmpresarial> listaMenu = JsonSerializer.Deserialize<List<TbMenuEmpresarial>>(listaJson);
+
+
+    string listarol = HttpContextAccessor.HttpContext.Session.GetString("Rol");
+
+    int resultadoRol = JsonSerializer.Deserialize<int>(listarol);
+
+  
+
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Grupo Mayra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+
+
+
+
+
+
+
+            <ul class="navbar-nav">
+
+                @foreach(var menu in listaMenu){
+
+                    bool tiene_menu = menu.TbSubmenuEmpresarials.Count > 0 ? true : false;
+                    string clase_menu = tiene_menu ? "nav-item dropdown" : "nav-item";
+
+                   
+
+                        <li class="@clase_menu">
+
+                            @foreach(var roll in menu.TbPermisos)
+                            {
+                                if(roll.IdRol == resultadoRol)
+                                {
+
+                                         @if (tiene_menu)
+                                        {
+
+                                            <a class="nav-link dropdown-toggle" href="@menu.UrlMenuEmpre" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            @menu.DescribcionMenuEmpre
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+
+                                                @foreach(var submenu in menu.TbSubmenuEmpresarials){
+
+                                                <li><a class="dropdown-item" href="@submenu.UrlSubmenuEmpre">@submenu.DesSubmenuEmpre</a></li>
+
+                                                }
+                                            </ul>
+
+                                         }else{
+
+                                           <a class="nav-link" href="@menu.UrlMenuEmpre"  aria-expanded="false">
+                                            @menu.DescribcionMenuEmpre
+                                           </a>
+
+                                          }
+                          
+                                 }else{
+
+
+                                 }
+
+                            }
+                        </li>
+                   
+
+                }
+
+            </ul>
+
+
+
+
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+                <a class="nav-link text-break" asp-controller="PaginaEmpresarial" asp-action="CerrarSesion">Cerrar Sesion</a>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,597 @@
+{
+  "Files": [
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\proyecto2023.bundle.scp.css",
+      "PackagePath": "staticwebassets\\proyecto2023.bundle.scp.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\css\\EstilosPaginaPrincipal.css",
+      "PackagePath": "staticwebassets\\css\\EstilosPaginaPrincipal.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\css\\productosCategoria.css",
+      "PackagePath": "staticwebassets\\css\\productosCategoria.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\fonts\\raleway-black.woff2",
+      "PackagePath": "staticwebassets\\fonts\\raleway-black.woff2"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\fonts\\raleway-regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\raleway-regular.woff2"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Audifonos Bluetooth 5.0 Pure Bass Sound.jpg",
+      "PackagePath": "staticwebassets\\img\\Audifonos Bluetooth 5.0 Pure Bass Sound.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Auriculares Bluetooth.jpg",
+      "PackagePath": "staticwebassets\\img\\Auriculares Bluetooth.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Auriculares inalámbricos Bluetooth.jpg",
+      "PackagePath": "staticwebassets\\img\\Auriculares inalámbricos Bluetooth.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Samsumg Galaxy.jpg",
+      "PackagePath": "staticwebassets\\img\\Samsumg Galaxy.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Samsung Galaxy A33.jpg",
+      "PackagePath": "staticwebassets\\img\\Samsung Galaxy A33.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Samsung Tablet Galaxy Tab.jpg",
+      "PackagePath": "staticwebassets\\img\\Samsung Tablet Galaxy Tab.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Silla Gamer 1ST Player DK2.png",
+      "PackagePath": "staticwebassets\\img\\Silla Gamer 1ST Player DK2.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Silla Gamer Infinity Pro NXT.jpg",
+      "PackagePath": "staticwebassets\\img\\Silla Gamer Infinity Pro NXT.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Silla Gamer Rose.jpg",
+      "PackagePath": "staticwebassets\\img\\Silla Gamer Rose.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Silla Playseat Puma Gaming Active.jpg",
+      "PackagePath": "staticwebassets\\img\\Silla Playseat Puma Gaming Active.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Table Galaxy.jpg",
+      "PackagePath": "staticwebassets\\img\\Table Galaxy.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Tablet Apple iPad Pro 12.9.jpg",
+      "PackagePath": "staticwebassets\\img\\Tablet Apple iPad Pro 12.9.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Xiaomi Redmi 10.jpg",
+      "PackagePath": "staticwebassets\\img\\Xiaomi Redmi 10.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\Xiaomi Redmi Note 10S.jpg",
+      "PackagePath": "staticwebassets\\img\\Xiaomi Redmi Note 10S.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\apparel1.jpg",
+      "PackagePath": "staticwebassets\\img\\apparel1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\apparel2.jpg",
+      "PackagePath": "staticwebassets\\img\\apparel2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\apparel3.jpg",
+      "PackagePath": "staticwebassets\\img\\apparel3.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\apparel4.jpg",
+      "PackagePath": "staticwebassets\\img\\apparel4.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\apparel5.jpg",
+      "PackagePath": "staticwebassets\\img\\apparel5.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\apparel6.jpg",
+      "PackagePath": "staticwebassets\\img\\apparel6.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\asus.png",
+      "PackagePath": "staticwebassets\\img\\asus.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\banner1.jpg",
+      "PackagePath": "staticwebassets\\img\\banner1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\banner2.jpg",
+      "PackagePath": "staticwebassets\\img\\banner2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\banner2.webp",
+      "PackagePath": "staticwebassets\\img\\banner2.webp"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\banner3.webp",
+      "PackagePath": "staticwebassets\\img\\banner3.webp"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\banner4.webp",
+      "PackagePath": "staticwebassets\\img\\banner4.webp"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\banner5.webp",
+      "PackagePath": "staticwebassets\\img\\banner5.webp"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\banner6.webp",
+      "PackagePath": "staticwebassets\\img\\banner6.webp"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\banner7.webp",
+      "PackagePath": "staticwebassets\\img\\banner7.webp"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\cocacola.png",
+      "PackagePath": "staticwebassets\\img\\cocacola.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\descarga_as_ass.jpg",
+      "PackagePath": "staticwebassets\\img\\descarga_as_ass.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\dng.png",
+      "PackagePath": "staticwebassets\\img\\dng.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\dungeon.jpg",
+      "PackagePath": "staticwebassets\\img\\dungeon.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\electronic1.jpg",
+      "PackagePath": "staticwebassets\\img\\electronic1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\electronic2.jpg",
+      "PackagePath": "staticwebassets\\img\\electronic2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\electronic3.jpg",
+      "PackagePath": "staticwebassets\\img\\electronic3.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\electronic4.jpg",
+      "PackagePath": "staticwebassets\\img\\electronic4.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\electronic5.jpg",
+      "PackagePath": "staticwebassets\\img\\electronic5.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\ground.png",
+      "PackagePath": "staticwebassets\\img\\ground.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\home1.jpg",
+      "PackagePath": "staticwebassets\\img\\home1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\home2.jpg",
+      "PackagePath": "staticwebassets\\img\\home2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\home3.jpg",
+      "PackagePath": "staticwebassets\\img\\home3.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\home4.jpg",
+      "PackagePath": "staticwebassets\\img\\home4.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\home5.jpg",
+      "PackagePath": "staticwebassets\\img\\home5.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\hurley.png",
+      "PackagePath": "staticwebassets\\img\\hurley.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\layer-base.png",
+      "PackagePath": "staticwebassets\\img\\layer-base.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\layer-front.png",
+      "PackagePath": "staticwebassets\\img\\layer-front.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\layer-middle.png",
+      "PackagePath": "staticwebassets\\img\\layer-middle.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\menu_bg1.jpg",
+      "PackagePath": "staticwebassets\\img\\menu_bg1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\menu_bg2.jpg",
+      "PackagePath": "staticwebassets\\img\\menu_bg2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\menu_bg3.jpg",
+      "PackagePath": "staticwebassets\\img\\menu_bg3.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\menu_bg4.jpg",
+      "PackagePath": "staticwebassets\\img\\menu_bg4.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\menu_bg5.jpg",
+      "PackagePath": "staticwebassets\\img\\menu_bg5.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\oppo.png",
+      "PackagePath": "staticwebassets\\img\\oppo.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\procat1.jpg",
+      "PackagePath": "staticwebassets\\img\\procat1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\procat2.jpg",
+      "PackagePath": "staticwebassets\\img\\procat2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\procat3.jpg",
+      "PackagePath": "staticwebassets\\img\\procat3.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\samsung.png",
+      "PackagePath": "staticwebassets\\img\\samsung.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\shoe1-1.jpg",
+      "PackagePath": "staticwebassets\\img\\shoe1-1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\shoe1-2.jpg",
+      "PackagePath": "staticwebassets\\img\\shoe1-2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\shoe1-3.jpg",
+      "PackagePath": "staticwebassets\\img\\shoe1-3.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\shoe1.jpg",
+      "PackagePath": "staticwebassets\\img\\shoe1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\shoe2.jpg",
+      "PackagePath": "staticwebassets\\img\\shoe2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\shoe3.jpg",
+      "PackagePath": "staticwebassets\\img\\shoe3.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\shoe4.jpg",
+      "PackagePath": "staticwebassets\\img\\shoe4.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\shoe5.jpg",
+      "PackagePath": "staticwebassets\\img\\shoe5.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\slider0.jpg",
+      "PackagePath": "staticwebassets\\img\\slider0.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\slider1.jpg",
+      "PackagePath": "staticwebassets\\img\\slider1.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\slider2.jpg",
+      "PackagePath": "staticwebassets\\img\\slider2.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\slider3.jpg",
+      "PackagePath": "staticwebassets\\img\\slider3.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\table Aplle.jpg",
+      "PackagePath": "staticwebassets\\img\\table Aplle.jpg"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\img\\zara.png",
+      "PackagePath": "staticwebassets\\img\\zara.png"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\js\\CarritoCompras.js",
+      "PackagePath": "staticwebassets\\js\\CarritoCompras.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\js\\PagPrin.js",
+      "PackagePath": "staticwebassets\\js\\PagPrin.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\libs\\gsap\\ScrollSmoother.min.js",
+      "PackagePath": "staticwebassets\\libs\\gsap\\ScrollSmoother.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\libs\\gsap\\ScrollTrigger.min.js",
+      "PackagePath": "staticwebassets\\libs\\gsap\\ScrollTrigger.min.js"
+    },
+    {
+      "Id": "A:\\CIBERTEC CICLO 05\\Desarrollo de Servcios WEB\\ProyectoQueSePresenteLEFIRME\\proyecto2023\\proyecto2023\\wwwroot\\libs\\gsap\\gsap.min.js",
+      "PackagePath": "staticwebassets\\libs\\gsap\\gsap.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.proyecto2023.props",
+      "PackagePath": "build\\proyecto2023.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.proyecto2023.props",
+      "PackagePath": "buildMultiTargeting\\proyecto2023.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.proyecto2023.props",
+      "PackagePath": "buildTransitive\\proyecto2023.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.proyecto2023.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

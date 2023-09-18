@@ -1,0 +1,310 @@
+﻿
+@using System.Text.Json;
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+
+@{
+
+    string menuJson = HttpContextAccessor.HttpContext.Session.GetString("menu");
+
+    List<TbMenu> listaMenu = JsonSerializer.Deserialize<List<TbMenu>>(menuJson);
+
+
+    string categoria = HttpContextAccessor.HttpContext.Session.GetString("categoria");
+
+    List<TbCategoriaProducto> listaCategoria = JsonSerializer.Deserialize<List<TbCategoriaProducto>>(categoria);
+
+
+    double precio = Context.Session.GetObject<double>("precio");
+  
+
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f6f6f6;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        .dropdown-menu div {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-menu div:hover {
+                background-color: #f1f1f1
+            }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f6f6f6;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1000; /* Aumenta este valor según sea necesario */
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f6f6f6;
+        min-width: 160px;
+        max-height: 200px; /* Limita la altura de la lista */
+        overflow-y: auto; /* Añade desplazamiento si la lista es demasiado larga */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+</style>
+
+
+    <div id="page" class="site">
+
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head ">
+                    <div class="logo"><a href="/"><span class="circle"></span>.Store</a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+                </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+
+        <header>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Blog</a></li>
+                              
+                            </ul>
+
+                        </div>
+                        <div class="right">
+
+                            <ul class="flexitem main-links">
+
+                                <li>
+                                    <a href="#">USD<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span>  </a>
+                                    <ul>
+                                        <li class="current"><a href="#">USD</a></li>
+                                        <li><a href="#">EURO</a></li>
+                                        <li><a href="#">SOLES</a></li>                                       
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">ESPAÑOL<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span>  </a>
+                                    <ul>                                      
+                                        <li><a href="#">INGLES</a></li>
+                                       
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header top-->
+
+            <div class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                        <div class="logo"><a href="/PaginaVenta/PaginaVenta"><span class="circle"></span>Grupo Mayra</a></div>
+                            <nav class="mobile-hide">
+                                <!--boostrap-->
+
+
+                                <ul class="flexitem second-links">
+
+                                    @foreach(var menu in listaMenu)
+                                    {
+                                        bool tiene_submenu = menu.TbSubmenus.Count() > 0 ? true : false;
+                                        string claseMenu = tiene_submenu ? "nav-item dropdown" : "nav-item";
+
+                                        <li class="@claseMenu">
+
+                                            @if (tiene_submenu)
+                                            {
+
+                                                <a class="nav-link dropdown-toggle" href="@menu.UrlMenu" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    @menu.DescribcionMenu
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                    @foreach(var submenu in menu.TbSubmenus){
+
+                                                        <li><a class="dropdown-item" href="@submenu.UrlSubmenu">@submenu.DesSubmene</a></li>
+
+                                                    }
+                                                </ul>
+                                            }
+                                            else
+                                            {
+                                                <a class="nav-link" href="@menu.UrlMenu" aria-current="page">
+                                                    @menu.DescribcionMenu
+                                                </a>
+
+
+                                            }
+
+                                        </li>
+
+                                    }
+                                </ul>
+
+
+
+                            </nav>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem second-links">
+                                <li class="mobile-hide">
+                                    
+                                    <!--ELIMINADO-->
+
+                                </li>
+                                <li>
+                                <a href="/Carrito/AgregarCarrito" class="iscart">
+                                        <div class="icon-large">
+                                            <i class="ri-shopping-cart-line"></i>
+                                            <div class="fly-item"><span class="item-number">0</span></div>
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="mini-text">Total</div>
+                                        <div class="cart-total">$@precio</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">CATEGORIAS</div>
+                                    <div class="mini-text mobile-hide">Total 1059 Productos</div>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-links">
+
+                                        @foreach (var cat in listaCategoria)
+                                        {
+                                            
+                                        
+                                            <li>
+
+                                                <a class="dropdown-item" href="@Url.Action("ListaProducto", "ListaDeProductosPorCategorias", new { categoria = cat.IdCategoria })">
+                                                    @cat.DescripcionCate
+                                                    <div class="icon-small"><i class="ri-shopping-bag-fill"></i></div>
+                                                </a>
+
+                                               
+
+                                            </li>
+
+
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="search-box">
+                            <form method="post" action="/ListaProductosPorBusqueda/Lista" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    @*<input type="search" placeholder="busqueda">*@
+                                   @* <input type="text" id="search" placeholder="Buscar videos...">
+                                    <ul id="suggestions"></ul>*@
+                                    @*//
+                                    <input type="text" name="nombre" id="search" list="suggestions" placeholder="Buscar videos...">
+                                    <datalist id="suggestions"></datalist>*@
+
+                                   <input type="text" name="nombre" id="search" autocomplete="off">
+                                   <div id="suggestions" class="dropdown-menu"></div>
+
+                                    <button type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!---fin header---->
+
+     
+
+    </div>
+
+
+@*<script>
+    $(document).ready(function () {
+        $('#search').on('input', function () {
+            var searchQuery = $(this).val();
+            $.get("/Menu/OnGet?query=" + searchQuery, function (data) {
+                $('#suggestions').empty();
+                $.each(data, function (i, item) {
+                    var suggestion = '<option value="' + item + '">';
+                    $('#suggestions').append(suggestion);
+                });
+            });
+        });
+    });
+</script>*@
+<script>
+    $(document).ready(function () {
+        $('#search').on('input', function () {
+            var searchQuery = $(this).val();
+            $.get("/Menu/OnGet?query=" + searchQuery, function (data) {
+                $('#suggestions').empty().show();
+                $.each(data, function (i, item) {
+                    var suggestion = '<div class="suggestion">' + item + '</div>';
+                    $('#suggestions').append(suggestion);
+                });
+                $('.suggestion').on('click', function () {
+                    $('#search').val($(this).text());
+                    $('#suggestions').empty().hide();
+                });
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+﻿@model IEnumerable<proyecto2023.Models.TbProducto>
+
+@{
+    Layout = null;
+}
+
+<html >
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+ 
+
+</head>
+<body>
+
+    <partial name="_MenuDinamicoEmpresarial"/>
+
+    <h1 class="text-center display-4 font-weight-bold text-primary">Lista de Productos</h1>
+
+<p>
+        <a class="d-flex align-items-center justify-content-center btn btn-primary"  asp-action="CreateProducto">Crear Nuevo Producto</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Nombre Producto
+            </th>
+            <th>
+               Marca 
+            </th>
+            <th>
+               Precio 
+            </th>
+           
+            <th>
+                    Stock
+            </th>
+            <th>
+                Categoria
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MarcaProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioProd)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.StockProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.DescripcionCate)
+            </td>
+            <td>
+
+                        @Html.ActionLink("Editar","EditarProducto",new{id=item.IdProducto}, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Detalle","DetalleProducto",new{id=item.IdProducto}, new { @class = "btn btn-primary" })
+                <form action="/Mantenimiento/EliminarProducto" method="post">
+
+                    <input type="hidden" name="id" value="@item.IdProducto" />
+                    <button type="submit">Eliminar</button>
+
+                </form>
+
+               
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+
+ 
+
+</body>
+</html>

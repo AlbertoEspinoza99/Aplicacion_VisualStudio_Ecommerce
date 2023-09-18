@@ -1,0 +1,24 @@
+﻿body {
+}
+
+.productoss {
+   
+    position:absolute;
+    margin-left: 600px;
+   
+}
+
+.imggg {
+   
+    height:450px;
+    width:270px;
+    position:relative;
+    margin-left: 1080px;
+    margin-bottom: 300px;
+}
+
+.contador{
+
+   margin-top:10px;
+
+}

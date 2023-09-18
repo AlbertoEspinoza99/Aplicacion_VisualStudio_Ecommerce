@@ -1,0 +1,163 @@
+﻿@model IEnumerable<proyecto2023.Models.TbProducto>
+@{
+    Layout = null;
+
+    List<TbCarrito> compras = Context.Session.GetObject<List<TbCarrito>>("carrito");
+
+    var mensaje = TempData["Mensaje"] as string;
+    if (!string.IsNullOrEmpty(mensaje))
+    {
+        <div id="tempAlert" class="alert alert-primary alert-dismissible fade show text-center" role="alert" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; width: 300px;">
+            @mensaje
+           
+        </div>
+    }
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerc</title>
+
+    <link rel="stylesheet" href="~/css/EstilosPaginaPrincipal.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/productosCategoria.css" />
+
+</head>
+<body>
+
+    <partial name="_MenuDinamico" />
+
+    
+
+    <main>
+
+
+        <div class="productoss">
+
+            @foreach (var item in Model) {
+                <div class="row products mini ppp">
+                    <div class="item">
+
+                        
+
+                                <input type="hidden" value="@item.IdProducto">
+                                <div class="media">
+                                    <div class="thumbnail object-cover">
+                                        <a href="">
+                                            <img src="@item.ImgProd" alt="">
+                                        </a>
+                                    </div>
+                                       <div class="contador">
+
+                                <a href="@Url.Action("listaCarrito","ListaDeProductosPorCategorias",new{idProducto=item.IdProducto,idCategoria=item.IdCategoria})">Anadir al carrito</a>
+                                       @* <a class="nav-link text-break" asp-controller="ListaDeProductosPorCategorias" asp-action="listaCarrito">Anadir al carrito</a>*@
+                                      </div>
+                                </div>
+                               
+
+                                <div class="content">
+                                    <div class="rating">
+                                        <div class="stars"></div>
+                                        <span class="mini-text">(2,548)</span>
+                                    </div>
+                                    <h3 class="main-links"><a href="#">@item.NombreProd</a></h3>
+                                    <div class="price">
+                                        <span class="current">$@item.PrecioProd</span>
+                                        <span class="normal mini-text">$</span>
+                                    </div>
+                                    <div class="mini-text">
+                                        <p>2975 sold</p>
+                                        <p>Envio Gratis</p>
+                                    </div>
+                                </div>
+
+                              
+
+                    </div>
+                </div>
+
+           }
+           
+        </div>
+        
+    </main>
+    
+    <img class="imggg" src="~/img/cocacola.png" />
+
+
+    @section Scripts
+        {
+        <script>
+
+            $(function () {
+
+                $(".agregar").on("click", function (event) {
+
+
+                    event.preventDefault();
+                    var ProductoId = 1;
+                    var cantidad = 1;
+
+
+                    $.ajax(
+
+                        {
+
+                            url: "@Url.Action("AgregarCarrito","Carrito")",
+                            data: { id: ProductoId, cantidad: cantidad },
+                            type: "post",
+                            success: function (response) {
+                                window.location.href = "@Url.Action("AgregarCarrito","Carrito")";
+                            },
+                            error: function (err, error) {
+                                alert(error);
+                            }
+
+                        }
+
+                    );
+
+
+
+                });
+
+
+            });
+
+
+        </script>
+    }
+
+
+
+
+
+    @* <script src="~/js/CarritoCompras.js"></script>*@
+    <script>
+        window.setTimeout(function () {
+            $("#tempAlert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 3000);
+    </script>
+ 
+
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="~/js/PagPrin.js"></script>
+</body>
+
+
+
+</html>
+
+

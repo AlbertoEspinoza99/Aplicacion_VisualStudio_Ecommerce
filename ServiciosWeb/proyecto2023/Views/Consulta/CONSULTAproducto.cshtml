@@ -1,0 +1,332 @@
+﻿
+@{
+    Layout = null;
+
+    var milista = ViewData["listaProducto"] as List<TbProducto>;
+
+}
+
+
+<html>
+
+<head>
+
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+
+        <partial name="_MenuDinamicoEmpresarial" />
+
+        <div class="row mt-2">
+
+
+            <div class="col-sm-6">
+
+                <div class="card">
+
+                    <div class="card-header">Productos</div>
+
+                    <div class="card-body">
+
+
+
+                        <table class="table table-striped table-bordered mt-5">
+
+                            <thead>
+                                <tr>
+
+                                    <th>Nombre Producto</th>
+                                    <th>Marca</th>
+                                    <th>Precio</th>
+                                    <th>categoria</th>
+                                    <th>Stock</th>
+                                   
+                                    <th>ventas</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+
+                                
+
+                                    @if (milista !=null)
+                                    {
+
+                                        foreach (var elemento in milista)
+                                        {
+                                        <tr>
+                                            <td>@elemento.NombreProd</td>
+                                            <td>@elemento.MarcaProd</td>
+                                            <td>@elemento.PrecioProd</td>
+                                            <td>@elemento.IdCategoriaNavigation.DescripcionCate</td>
+                                            <td>@elemento.StockProd</td>
+                                          
+                                           <td><button id="seleccion" value="@elemento.IdProducto">selecciona</button></td>
+
+                                        </tr>
+                                        }
+
+
+                                     }
+
+                                 
+
+
+                               
+
+                            </tbody>
+
+
+                        </table>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-sm-6">
+
+                <div class="card">
+
+                    <div class="card-header">Productos mayor vendidos</div>
+
+                    <div class="card-body">
+
+                        <canvas id="chartProductos" style="max-height:250px"></canvas>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-header">Productos mayor vendidos</div>
+
+                    <div class="card-body">
+
+                        <canvas id="chartProductoSeleccionado" style="max-height:250px"></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+     <script>
+
+         function productosVendidos(){
+
+            fetch("/Consulta/resumenProducto")
+
+                .then((response)=>{
+
+                    if(response.ok){
+
+                        return response.json();
+
+                    }else{
+
+                        throw new Error(response.statusText); 
+
+                    }
+
+                })
+                .then((dataJson)=>{
+
+                   // console.log(dataJson);
+                        const labels = dataJson.map((item) => { return item.producto })
+                        const values = dataJson.map((item) => { return item.cantidad })
+
+                        const data = {
+                            labels: labels,
+                            datasets: [{
+                                label: 'cantidad',
+                                data: values,
+                                backgroundColor: [
+                                    'rgb(255, 99, 132)',
+                                    'rgb(54, 162, 235)',
+                                    'rgb(255, 205, 86)',
+                                    "#01AF40"
+                                ],
+                                hoverOffset: 4
+                            }]
+                        };
+
+                        const config = {
+                            type: 'doughnut',
+                            data: data,
+                        };
+
+                        const canvaDona = document.getElementById("chartProductos");
+                        const graficoDona = new Chart(canvaDona,config);
+
+
+                })
+                .catch((error)=>{
+
+                    console.error(error);
+                });
+         }
+
+        var dona=null;
+
+         function productoSusVentas(cod){
+
+            fetch("/Consulta/productoVentas?cod="+cod)
+            .then((response)=>{
+
+                    if (response.ok) {
+
+                        return response.json();
+
+                    } else {
+
+                        throw new Error(response.statusText);
+
+                    }
+
+            })
+            .then((dataJson)=>{
+                    console.log(dataJson)
+                   
+                    let nombre='cantidad';
+                  
+
+                    const labels = dataJson.map((item) => {  return item.producto })
+
+
+                    const values = dataJson.map((item) =>  {  return item.cantidad })
+
+                    if (values ==0) {
+                         nombre = 'No existen Registros';
+                    }
+
+
+                    const data = {
+                        labels: labels,
+                        datasets: [
+                            {
+                                label: nombre,
+                                data: values,
+                                backgroundColor: 'rgb(54, 162, 235)',
+                                borderWidth: 1
+                            }
+                        ]
+                    };
+
+                    const config = {
+                        type: 'bar',
+                        data: data,
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    };
+
+                    const valor = document.getElementById("chartProductoSeleccionado");
+                    if (dona != null) { // Si el gráfico ya existe...
+                        dona.destroy(); // ...destrúyelo.
+                    }
+                    dona = new Chart(valor,config);
+
+            })
+            .catch((error)=>{
+                console.error(error);
+            });
+
+         }
+
+
+         $(document).ready(()=>{
+
+            productosVendidos()
+           
+
+         })
+
+         $(document).on("click", "#seleccion",function(){
+
+            //let cod = $(this).siblings("#seleccion").val();
+            let valor = $(this).val();
+
+
+                productoSusVentas(valor)
+                console.log(valor)
+
+            
+
+
+        })
+
+     </script>
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

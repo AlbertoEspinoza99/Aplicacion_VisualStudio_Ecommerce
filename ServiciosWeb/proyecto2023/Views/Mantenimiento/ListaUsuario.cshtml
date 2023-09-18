@@ -1,0 +1,91 @@
+﻿@model IEnumerable<proyecto2023.Models.TbUsuario>
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+
+</head>
+<body>
+
+    <partial name="_MenuDinamicoEmpresarial" />
+
+
+    <h1 class="text-center display-4 font-weight-bold text-primary">Lista de Usuarios</h1>
+
+<p>
+        <a class="d-flex align-items-center justify-content-center btn btn-primary" asp-action="Create">Crear Nuevo Usuario</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Email
+            </th>
+            
+            <th>
+               Nombre
+            </th>
+            <th>
+               Apellido
+            </th>
+            <th>
+               Estado
+            </th>
+            <th>
+                Usuario
+            </th>
+           
+            <th>
+               Rol
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailUsu)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreUsu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApellidoUsu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoUsu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioUsu)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.IdRolNavigation.NombreRol)
+            </td>
+            <td>
+
+                        @Html.ActionLink("Editar","EditarUsuario",new {id=item.IdUsu}, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Detalle","DetalleUsuario",new{id=item.IdUsu}, new { @class = "btn btn-primary" }) 
+                <form action="/Mantenimiento/EliminarUsuario" method="post">
+
+                   <input type="hidden" value="@item.IdUsu" name="id" />
+                   <button type="submit">Eliminar</button>
+
+                </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+</body>
+</html>

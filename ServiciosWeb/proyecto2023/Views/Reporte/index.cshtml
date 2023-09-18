@@ -1,0 +1,88 @@
+﻿
+@{
+    Layout = null;
+    var lista = ViewData["lista"] as List<TbOrden>;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+   
+
+</head>
+<body>
+
+    <partial name="_MenuDinamicoEmpresarial" />
+
+
+    <div class="row mt-2">
+        <div class="col-sm-6">
+            <div class="card">
+
+                <div class="card-header">Ordenes</div>
+
+                <div class="card-body">
+
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Numero Orden</th>
+                                <th>Usuario</th>
+                                <th>Total</th>
+                                <th>Fecha orden</th>
+                                <th>reporte</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            @if (lista != null)
+                            {
+                                
+                                @foreach(var datos in lista)
+                                {
+                                     <tr>
+                                    <td>@datos.IdOrden</td>
+                                    <td>@datos.IdUsuNavigation.NombreUsu</td>
+                                    <td>@datos.Total</td>
+                                    <td>@datos.FechaOrden</td>
+                                   <form method="post" action="/Reporte/ResultadoUsuario">
+
+                                     <input type="hidden" name="id" value="@datos.IdOrden" />
+                                      <td> <button type="submit">Seleccione</button></td>
+
+                                    </form>
+                                    </tr>
+                                }
+
+
+                            }
+                        
+
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+
+         </div>
+
+
+     </div>
+
+
+   </div>
+    
+
+
+
+
+
+   
+</body>
+</html>

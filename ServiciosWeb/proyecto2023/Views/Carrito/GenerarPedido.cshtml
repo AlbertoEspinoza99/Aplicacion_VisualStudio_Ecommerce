@@ -1,0 +1,46 @@
+﻿@model proyecto2023.Models.TbOrden
+
+@{
+    ViewData["Title"] = "GenerarPedido";
+}
+
+<h1>Generar Pedido</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="GenerarPedido">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdUsu" hidden class="control-label"></label>
+                <input asp-for="IdUsu" type="hidden" class="form-control" value="@ViewBag.IdUsu" />
+            </div>
+            <div class="form-group">
+                <label asp-for="IdPago" class="control-label"></label>
+                <select asp-for="IdPago" class ="form-control" asp-items="ViewBag.IdPago"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Total" class="control-label"></label>
+                <input asp-for="Total" class="form-control" value="@ViewBag.precioTotal" />
+                <span asp-validation-for="Total" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdDomi" hidden class="control-label"></label>
+                <input asp-for="IdDomi" type="hidden" class="form-control" value="@ViewBag.IdDomi" />
+               
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Generar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<br />
+<div>
+    <form action="/ListaDeProductosPorCategorias/ListaProducto">
+        <button type="submit">-------Volver-----</button>
+    </form>
+</div>
+

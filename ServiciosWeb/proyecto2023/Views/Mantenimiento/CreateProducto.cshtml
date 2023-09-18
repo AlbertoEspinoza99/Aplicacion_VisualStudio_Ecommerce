@@ -1,0 +1,65 @@
+﻿@model proyecto2023.Models.TbProducto
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+
+</head>
+<body>
+
+    <partial name="_MenuDinamicoEmpresarial" />
+    <h1 class="text-center display-4 font-weight-bold text-primary">Crear Producto</h1>
+
+<h4></h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateProducto">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NombreProd" class="control-label">Nombre</label>
+                <input asp-for="NombreProd" class="form-control" required />
+                <span asp-validation-for="NombreProd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MarcaProd" class="control-label">Marca</label>
+                    <input asp-for="MarcaProd" class="form-control" required />
+                <span asp-validation-for="MarcaProd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrecioProd" class="control-label">Precio</label>
+                    <input asp-for="PrecioProd" class="form-control" required />
+                <span asp-validation-for="PrecioProd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCategoria" class="control-label">Categoria</label>
+                <select asp-for="IdCategoria" class ="form-control" asp-items="ViewBag.IdCategoria"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImgProd" class="control-label">Img</label>
+                    <input asp-for="ImgProd" class="form-control" required />
+                <span asp-validation-for="ImgProd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StockProd" class="control-label">Stock</label>
+                    <input asp-for="StockProd" class="form-control" required />
+                <span asp-validation-for="StockProd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    
+</div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿@model proyecto2023.Models.TbProducto
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+
+    <partial name="_MenuDinamicoEmpresarial" />
+   
+
+    <div class="container mt-3">
+        <h1 class="text-center display-4 font-weight-bold text-primary">Detalle</h1>
+        <div class="row justify-content-center">
+            <div class="col-sm-10">
+                <img src="@Html.DisplayFor(model => model.ImgProd)" class="img-fluid rounded mx-auto d-block" />
+            </div>
+        </div>
+
+        <dl class="row mt-4">
+            <dt class="col-sm-2 text-right font-weight-bold">
+                Nombre
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NombreProd)
+            </dd>
+
+            <dt class="col-sm-2 text-right font-weight-bold">
+                Marca
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.MarcaProd)
+            </dd>
+
+            <dt class="col-sm-2 text-right font-weight-bold">
+                Precio
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PrecioProd)
+            </dd>
+
+            <dt class="col-sm-2 text-right font-weight-bold">
+                Stock
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StockProd)
+            </dd>
+
+            <dt class="col-sm-2 text-right font-weight-bold">
+                Categoria
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IdCategoriaNavigation.DescripcionCate)
+            </dd>
+        </dl>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

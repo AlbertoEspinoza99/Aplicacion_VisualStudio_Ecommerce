@@ -1,0 +1,146 @@
+﻿@model IEnumerable<proyecto2023.Models.TbProducto>
+
+@{
+    ViewData["Title"] = "GenerarPedido";
+
+    List<TbCarrito> compras = Context.Session.GetObject<List<TbCarrito>>("carrito");
+
+    double total=0;
+
+    var mensaje = TempData["Mensaje"] as string;
+    if (!string.IsNullOrEmpty(mensaje))
+    {
+        <div id="tempAlert" class="alert alert-primary alert-dismissible fade show text-center" role="alert" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; width: 300px;">
+            @mensaje
+
+        </div>
+    }
+}
+
+<h1 class="text-center">Carrito de Compras</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Codigo Producto
+            </th>
+            <th>
+                Nombre Producto
+            </th>
+            <th>
+                Precio
+            </th>
+            <th>
+                Cantidad
+            </th>
+            <th>
+                Total
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+     
+        @if (compras != null && compras.Count>0 )
+        {
+
+
+
+            @foreach (var item in compras)
+
+            {
+
+                String precioProducto = Model.Where(x => x.IdProducto == item.IdProducto).Select(c => c.PrecioProd).FirstOrDefault().ToString();
+                String NombreProducto = Model.Where(x => x.IdProducto == item.IdProducto).Select(c => c.NombreProd).FirstOrDefault().ToString();
+
+                total += (double)item.Cantidad * double.Parse(precioProducto);
+
+                 Context.Session.SetObject("precio", total);
+
+                <tr>
+                    <td>
+                        @item.IdProducto
+                    </td>
+                    <td>
+                        @NombreProducto
+                    </td>
+                    <td>
+                        @precioProducto
+                    </td>
+                    <td>
+                        @item.Cantidad
+                    </td>
+                    <td>
+                        @String.Format("{0:C}",(item.Cantidad * decimal.Parse(precioProducto)))
+                    </td>
+                    <td>
+
+                        <form action="/Carrito/AgregarCarrito" method="post">
+                            <input type="hidden" name="iddd" value="@item.IdProducto">
+                            <input type="hidden" name="valor" value="1">
+                            <button type="submit">+</button>
+                        </form>
+
+
+                    </td>
+
+                    <td>
+
+                        <form action="/Carrito/AgregarCarrito" method="post">
+
+                            <input type="hidden" name="iddd" value="@item.IdProducto">
+                            <input type="hidden" name="valor" value="2">
+                            <button type="submit">-</button>
+
+                        </form>
+
+
+                    </td>
+
+                    <td>
+
+                        <a href="@Url.Action("EliminarCarrito","Carrito",new{codProc=item.IdProducto})">Eliminar Producto</a>    
+
+                    </td>
+                </tr>
+            }
+
+            <form action="/Carrito/GenerarPedido">
+                <button type="submit">Seguir con la compra</button>
+            </form>
+
+        }else
+        {
+            
+            <h1>Hola Estimado , usted no ha agregado ningun producto al carrito</h1>
+            
+        }
+
+    </tbody>
+
+    <tr></tr>
+
+    <tfoot>
+
+        <th>Precio total de todos los productos</th>
+        <th>@String.Format("{0:C}",total)</th>
+
+       <form action="/ListaDeProductosPorCategorias/ListaProducto">
+        <button type="submit">-------Volver-----</button>
+       </form>
+
+    </tfoot>
+    
+  
+
+</table>
+
+<script>
+    window.setTimeout(function () {
+        $("#tempAlert").fadeTo(500, 0).slideUp(500, function () {
+            $(this).remove();
+        });
+    }, 3000);
+</script>

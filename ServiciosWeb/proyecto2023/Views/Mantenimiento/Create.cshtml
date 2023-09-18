@@ -1,0 +1,80 @@
+﻿@model proyecto2023.Models.TbUsuario
+
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+
+</head>
+<body>
+
+    <partial name="_MenuDinamicoEmpresarial" />
+
+
+    <h1 class="text-center display-4 font-weight-bold text-primary">Crear Usuario</h1>
+
+<h4>TbUsuario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EmailUsu" class="control-label">Email</label>
+                <input asp-for="EmailUsu" class="form-control" required/>
+                <span asp-validation-for="EmailUsu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PasswordUsu" class="control-label">Clave</label>
+                    <input asp-for="PasswordUsu" class="form-control mb-3" required />
+                <span asp-validation-for="PasswordUsu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NombreUsu" class="control-label">Nombre</label>
+                    <input asp-for="NombreUsu" class="form-control" required />
+                <span asp-validation-for="NombreUsu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ApellidoUsu" class="control-label"Apellido></label>
+                    <input asp-for="ApellidoUsu" class="form-control" required />
+                <span asp-validation-for="ApellidoUsu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadoUsu" class="control-label">Estado</label>
+                    <input asp-for="EstadoUsu" class="form-control" required />
+                <span asp-validation-for="EstadoUsu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioUsu" class="control-label">Uusario</label>
+                    <input asp-for="UsuarioUsu" class="form-control" required />
+                <span asp-validation-for="UsuarioUsu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdRol" class="control-label">Rol</label>
+                <select asp-for="IdRol" class ="form-control" asp-items="ViewBag.IdRol"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="NuevoUsuarioUsu" class="control-label">.</label>
+                    <input type="hidden" value="1" asp-for="NuevoUsuarioUsu" class="form-control"  />
+                <span asp-validation-for="NuevoUsuarioUsu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear nuevo" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+
+</div>
+
+
+
+</body>
+</html>
